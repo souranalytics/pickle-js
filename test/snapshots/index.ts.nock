@@ -1,0 +1,482 @@
+[
+  [
+    "event",
+    [
+      {
+        "body": {
+          "data": {
+          },
+          "meta": {
+          },
+          "name": "sign_in",
+          "userId": "101"
+        },
+        "method": "POST",
+        "path": "/api/events",
+        "rawHeaders": [
+          "Content-Type",
+          "application/json; charset=utf-8",
+          "Connection",
+          "close",
+          "x-matched-path",
+          "/api/events",
+          "content-length",
+          "142",
+          "date",
+          "Mon, 18 Oct 2021 23:14:50 GMT",
+          "x-vercel-cache",
+          "MISS",
+          "server",
+          "Vercel",
+          "strict-transport-security",
+          "max-age=63072000",
+          "cache-control",
+          "s-maxage=0"
+        ],
+        "reqheaders": {
+          "accept": "application/json",
+          "accept-encoding": "br, gzip, deflate",
+          "content-length": 75,
+          "content-type": "application/json",
+          "host": "pickle.sh"
+        },
+        "response": {
+          "event": {
+            "appId": 2,
+            "createdAt": "2021-10-18T23:14:50.418Z",
+            "data": {
+            },
+            "id": 50,
+            "meta": {
+            },
+            "name": "sign_in",
+            "userId": "101"
+          }
+        },
+        "responseIsBinary": false,
+        "scope": "https://pickle.sh:443",
+        "status": 200
+      }
+    ]
+  ],
+  [
+    "event with user id",
+    [
+      {
+        "body": {
+          "anonymousId": "101",
+          "data": {
+          },
+          "id": "101",
+          "meta": {
+          }
+        },
+        "method": "POST",
+        "path": "/api/identify",
+        "rawHeaders": [
+          "Content-Type",
+          "application/json; charset=utf-8",
+          "Connection",
+          "close",
+          "x-matched-path",
+          "/api/users",
+          "content-length",
+          "171",
+          "date",
+          "Mon, 18 Oct 2021 23:14:51 GMT",
+          "x-vercel-cache",
+          "MISS",
+          "server",
+          "Vercel",
+          "strict-transport-security",
+          "max-age=63072000",
+          "cache-control",
+          "s-maxage=0"
+        ],
+        "reqheaders": {
+          "accept": "application/json",
+          "accept-encoding": "br, gzip, deflate",
+          "content-length": 74,
+          "content-type": "application/json",
+          "host": "pickle.sh"
+        },
+        "response": {
+          "user": {
+            "anonymousId": "101",
+            "appId": 6,
+            "createdAt": "2021-10-13T09:09:14.653Z",
+            "data": {
+            },
+            "id": "101",
+            "meta": {
+            },
+            "updatedAt": "2021-10-18T23:14:51.101Z"
+          }
+        },
+        "responseIsBinary": false,
+        "scope": "https://pickle.sh:443",
+        "status": 200
+      },
+      {
+        "body": {
+          "data": {
+          },
+          "meta": {
+          },
+          "name": "sign_in",
+          "userId": "101"
+        },
+        "method": "POST",
+        "path": "/api/events",
+        "rawHeaders": [
+          "Content-Type",
+          "application/json; charset=utf-8",
+          "Connection",
+          "close",
+          "x-matched-path",
+          "/api/events",
+          "content-length",
+          "120",
+          "date",
+          "Mon, 18 Oct 2021 23:14:51 GMT",
+          "x-vercel-cache",
+          "MISS",
+          "server",
+          "Vercel",
+          "strict-transport-security",
+          "max-age=63072000",
+          "cache-control",
+          "s-maxage=0"
+        ],
+        "reqheaders": {
+          "accept": "application/json",
+          "accept-encoding": "br, gzip, deflate",
+          "content-length": 53,
+          "content-type": "application/json",
+          "host": "pickle.sh"
+        },
+        "response": {
+          "event": {
+            "appId": 2,
+            "createdAt": "2021-10-18T23:14:51.818Z",
+            "data": {
+            },
+            "id": 51,
+            "meta": {
+            },
+            "name": "sign_in",
+            "userId": "101"
+          }
+        },
+        "responseIsBinary": false,
+        "scope": "https://pickle.sh:443",
+        "status": 200
+      }
+    ]
+  ],
+  [
+    "identify",
+    [
+      {
+        "body": {
+          "anonymousId": "101",
+          "data": {
+          },
+          "id": "101",
+          "meta": {
+          }
+        },
+        "method": "POST",
+        "path": "/api/identify",
+        "rawHeaders": [
+          "Content-Type",
+          "application/json; charset=utf-8",
+          "Connection",
+          "close",
+          "x-matched-path",
+          "/api/users",
+          "content-length",
+          "171",
+          "date",
+          "Mon, 18 Oct 2021 23:14:49 GMT",
+          "x-vercel-cache",
+          "MISS",
+          "server",
+          "Vercel",
+          "strict-transport-security",
+          "max-age=63072000",
+          "cache-control",
+          "s-maxage=0"
+        ],
+        "reqheaders": {
+          "accept": "application/json",
+          "accept-encoding": "br, gzip, deflate",
+          "content-length": 74,
+          "content-type": "application/json",
+          "host": "pickle.sh"
+        },
+        "response": {
+          "user": {
+            "anonymousId": "101",
+            "appId": 6,
+            "createdAt": "2021-10-13T09:09:14.653Z",
+            "data": {
+            },
+            "id": "101",
+            "meta": {
+            },
+            "updatedAt": "2021-10-18T23:14:49.470Z"
+          }
+        },
+        "responseIsBinary": false,
+        "scope": "https://pickle.sh:443",
+        "status": 200
+      }
+    ]
+  ],
+  [
+    "identify without user id",
+    [
+      {
+        "body": {
+          "anonymousId": "101",
+          "data": {
+          },
+          "id": "101",
+          "meta": {
+          }
+        },
+        "method": "POST",
+        "path": "/api/identify",
+        "rawHeaders": [
+          "Content-Type",
+          "application/json; charset=utf-8",
+          "Connection",
+          "close",
+          "x-matched-path",
+          "/api/users",
+          "content-length",
+          "193",
+          "date",
+          "Mon, 18 Oct 2021 23:14:49 GMT",
+          "x-vercel-cache",
+          "MISS",
+          "server",
+          "Vercel",
+          "strict-transport-security",
+          "max-age=63072000",
+          "cache-control",
+          "s-maxage=0"
+        ],
+        "reqheaders": {
+          "accept": "application/json",
+          "accept-encoding": "br, gzip, deflate",
+          "content-length": 96,
+          "content-type": "application/json",
+          "host": "pickle.sh"
+        },
+        "response": {
+          "user": {
+            "anonymousId": "101",
+            "appId": 2,
+            "createdAt": "2021-10-18T23:14:49.745Z",
+            "data": {
+            },
+            "id": "101",
+            "meta": {
+            },
+            "updatedAt": "2021-10-18T23:14:49.746Z"
+          }
+        },
+        "responseIsBinary": false,
+        "scope": "https://pickle.sh:443",
+        "status": 200
+      }
+    ]
+  ],
+  [
+    "init",
+    [
+    ]
+  ],
+  [
+    "init without key",
+    [
+    ]
+  ],
+  [
+    "view",
+    [
+      {
+        "body": {
+          "data": {
+          },
+          "meta": {
+          },
+          "name": "Sign in",
+          "userId": "101"
+        },
+        "method": "POST",
+        "path": "/api/views",
+        "rawHeaders": [
+          "Content-Type",
+          "application/json; charset=utf-8",
+          "Connection",
+          "close",
+          "x-matched-path",
+          "/api/views",
+          "content-length",
+          "141",
+          "date",
+          "Mon, 18 Oct 2021 23:14:52 GMT",
+          "x-vercel-cache",
+          "MISS",
+          "server",
+          "Vercel",
+          "strict-transport-security",
+          "max-age=63072000",
+          "cache-control",
+          "s-maxage=0"
+        ],
+        "reqheaders": {
+          "accept": "application/json",
+          "accept-encoding": "br, gzip, deflate",
+          "content-length": 75,
+          "content-type": "application/json",
+          "host": "pickle.sh"
+        },
+        "response": {
+          "view": {
+            "appId": 2,
+            "createdAt": "2021-10-18T23:14:52.458Z",
+            "data": {
+            },
+            "id": 53,
+            "meta": {
+            },
+            "name": "Sign in",
+            "userId": "101"
+          }
+        },
+        "responseIsBinary": false,
+        "scope": "https://pickle.sh:443",
+        "status": 200
+      }
+    ]
+  ],
+  [
+    "view with user id",
+    [
+      {
+        "body": {
+          "anonymousId": "101",
+          "data": {
+          },
+          "id": "101",
+          "meta": {
+          }
+        },
+        "method": "POST",
+        "path": "/api/identify",
+        "rawHeaders": [
+          "Content-Type",
+          "application/json; charset=utf-8",
+          "Connection",
+          "close",
+          "x-matched-path",
+          "/api/users",
+          "content-length",
+          "171",
+          "date",
+          "Mon, 18 Oct 2021 23:14:53 GMT",
+          "x-vercel-cache",
+          "MISS",
+          "server",
+          "Vercel",
+          "strict-transport-security",
+          "max-age=63072000",
+          "cache-control",
+          "s-maxage=0"
+        ],
+        "reqheaders": {
+          "accept": "application/json",
+          "accept-encoding": "br, gzip, deflate",
+          "content-length": 74,
+          "content-type": "application/json",
+          "host": "pickle.sh"
+        },
+        "response": {
+          "user": {
+            "anonymousId": "101",
+            "appId": 6,
+            "createdAt": "2021-10-13T09:09:14.653Z",
+            "data": {
+            },
+            "id": "101",
+            "meta": {
+            },
+            "updatedAt": "2021-10-18T23:14:53.109Z"
+          }
+        },
+        "responseIsBinary": false,
+        "scope": "https://pickle.sh:443",
+        "status": 200
+      },
+      {
+        "body": {
+          "data": {
+          },
+          "meta": {
+          },
+          "name": "Sign in",
+          "userId": "101"
+        },
+        "method": "POST",
+        "path": "/api/views",
+        "rawHeaders": [
+          "Content-Type",
+          "application/json; charset=utf-8",
+          "Connection",
+          "close",
+          "x-matched-path",
+          "/api/views",
+          "content-length",
+          "119",
+          "date",
+          "Mon, 18 Oct 2021 23:14:53 GMT",
+          "x-vercel-cache",
+          "MISS",
+          "server",
+          "Vercel",
+          "strict-transport-security",
+          "max-age=63072000",
+          "cache-control",
+          "s-maxage=0"
+        ],
+        "reqheaders": {
+          "accept": "application/json",
+          "accept-encoding": "br, gzip, deflate",
+          "content-length": 53,
+          "content-type": "application/json",
+          "host": "pickle.sh"
+        },
+        "response": {
+          "view": {
+            "appId": 2,
+            "createdAt": "2021-10-18T23:14:53.436Z",
+            "data": {
+            },
+            "id": 54,
+            "meta": {
+            },
+            "name": "Sign in",
+            "userId": "101"
+          }
+        },
+        "responseIsBinary": false,
+        "scope": "https://pickle.sh:443",
+        "status": 200
+      }
+    ]
+  ]
+]

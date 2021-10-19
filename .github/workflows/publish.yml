@@ -26,6 +26,7 @@ jobs:
           registry-url: https://registry.npmjs.org
           scope: '@souranalytics'
       - run: yarn
+      - run: yarn build
       - run: yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

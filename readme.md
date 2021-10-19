@@ -1,6 +1,6 @@
-![Pickle](https://pickle.sh/pickle@2x.png)
+<img alt="Pickle" src="https://pickle.sh/pickle@2x.png" height="200" width="160" />
 
-# Pickle JS
+# @pickle/js
 
 Official [Pickle](https://pickle.sh) library for JavaScript.
 
@@ -8,13 +8,19 @@ Official [Pickle](https://pickle.sh) library for JavaScript.
 
 ### Install
 
+#### Yarn
+
 ```
 yarn add @pickle/js
 ```
 
-### Basic usage
+#### NPM
 
-You can now import and use Pickle.
+```
+npm install @pickle/js
+```
+
+### Basic usage
 
 ```typescript
 import { Pickle } from '@pickle/js'
@@ -34,39 +40,53 @@ await pickle.view('Sign in', {
 })
 ```
 
-## API
+## Docs
 
-### `new Pickle(key)`
+### Init
 
-| Parameter | Type   | Required | Description    |
-| --------- | ------ | -------- | -------------- |
-| key       | string | Yes      | Pickle app key |
+```typescript
+const pickle = new Pickle('YOUR_API_KEY')
+```
 
-### `pickle.identify(id, data?, meta?)`
+| Parameter | Type     | Required | Description    |
+| --------- | -------- | -------- | -------------- |
+| key       | `string` | Yes      | Pickle app key |
 
-| Parameter | Default value | Type   | Required | Description |
-| --------- | ------------- | ------ | -------- | ----------- |
-| id        |               | string | Yes      | User id     |
-| data      | `{}`          | object | No       | Properties  |
-| meta      | `{}`          | object | No       | Meta        |
+### Identifying users
 
-User properties will merge with and override existing properties.
+```typescript
+pickle.identify(id, data?, meta?)
+```
 
-### `pickle.event(name, data?, meta?)`
+| Parameter | Default value | Type     | Required | Description |
+| --------- | ------------- | -------- | -------- | ----------- |
+| id        | -             | `string` | Yes      | User id     |
+| data      | `{}`          | `Json`   | No       | Properties  |
+| meta      | `{}`          | `Json`   | No       | Meta        |
 
-| Parameter | Default value | Type   | Required | Description |
-| --------- | ------------- | ------ | -------- | ----------- |
-| name      |               | string | Yes      | Event name  |
-| data      | `{}`          | object | No       | Properties  |
-| meta      | `{}`          | object | No       | Meta        |
+### Sending events
 
-### `pickle.view(name, data?, meta?)`
+```typescript
+pickle.event(name, data?, meta?)
+```
 
-| Parameter | Default value | Type   | Required | Description |
-| --------- | ------------- | ------ | -------- | ----------- |
-| name      |               | string | Yes      | View name   |
-| data      | `{}`          | object | No       | Properties  |
-| meta      | `{}`          | object | No       | Meta        |
+| Parameter | Default value | Type     | Required | Description |
+| --------- | ------------- | -------- | -------- | ----------- |
+| name      | -             | `string` | Yes      | Event name  |
+| data      | `{}`          | `Json`   | No       | Properties  |
+| meta      | `{}`          | `Json`   | No       | Meta        |
+
+### Recording views
+
+```typescript
+pickle.view(name, data?, meta?)
+```
+
+| Parameter | Default value | Type     | Required | Description |
+| --------- | ------------- | -------- | -------- | ----------- |
+| name      | -             | `string` | Yes      | View name   |
+| data      | `{}`          | `Json`   | No       | Properties  |
+| meta      | `{}`          | `Json`   | No       | Meta        |
 
 ## Changelog
 

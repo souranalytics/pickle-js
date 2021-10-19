@@ -1,6 +1,6 @@
 <img alt="Pickle" src="https://pickle.sh/pickle@2x.png" height="200" width="160" />
 
-# @pickle/js
+# @souranalytics/js
 
 Official [Pickle](https://pickle.sh) library for JavaScript.
 
@@ -11,19 +11,19 @@ Official [Pickle](https://pickle.sh) library for JavaScript.
 #### Yarn
 
 ```
-yarn add @pickle/js
+yarn add @souranalytics/js
 ```
 
 #### NPM
 
 ```
-npm install @pickle/js
+npm install @souranalytics/js
 ```
 
 ### Basic usage
 
 ```typescript
-import { Pickle } from '@pickle/js'
+import { Pickle } from '@souranalytics/js'
 
 const pickle = new Pickle('YOUR_API_KEY')
 

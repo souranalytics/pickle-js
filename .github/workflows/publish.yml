@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org
-          scope: '@pickle'
+          scope: '@souranalytics'
       - run: yarn
       - run: yarn publish --access public
         env:
